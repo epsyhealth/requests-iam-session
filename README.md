@@ -1,30 +1,19 @@
 # requests-iam-session
 
-Python requests library implemented with build-in AIM authentication, using current credentials
+AWSSession class that extends [BaseUrlSession](https://toolbelt.readthedocs.io/en/latest/sessions.html) from [requests](https://docs.python-requests.org/en/master/) and automatically authenticates through IAM. 
 
 ## Installation
-
-Add custom pypi repository to `pyproject.toml` file
-
-```
-[[tool.poetry.source]]
-url = "***REMOVED***"
-name = "fury"
-```
-
-Install package
 
 ```
 poetry add requests-iam-session
 ```
 
 ## Usage example
-
 ```python
 from requests_iam_session import AWSSession
 
-session = AWSSession("https://***REMOVED******REMOVED***/")
-response = session.get("/users/***REMOVED***")
+session = AWSSession("https://example.com/")
+response = session.get("/users/1")
 
 print(response.json())
 ```
