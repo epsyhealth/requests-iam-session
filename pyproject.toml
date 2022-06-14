@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "requests-iam-session"
-version = "0.2.1"
+version = "0.2.2"
 description = "AWSSession class that extends BaseUrlSession from requests and automatically authenticates through IAM."
 authors = ["Epsy Engineering <engineering@epsyhealth.com>"]
 license = "MIT"
