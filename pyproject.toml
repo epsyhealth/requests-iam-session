@@ -12,13 +12,13 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3 :: Only"
 ]
 keywords = ["aws", "iam", "requests"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.7"
 requests = "^2.0"
 requests-toolbelt = "^0.9"
 aws-requests-auth = "^0.4"
